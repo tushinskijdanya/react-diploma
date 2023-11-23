@@ -3,3 +3,173 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'Otomanopee';
+    src: url('/fonts/OtomanopeeOne-Regular.ttf');
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+}
+
+main,
+footer {
+    background: #FFF;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+// HEADER
+
+.logo-name {
+    font-family: 'Otomanopee';
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+
+    &_layout {
+        color: #E0BEA2;
+    }
+}
+
+.homeHeader {
+    // width: 1440px;
+    height: 682px;
+    background-image: url('/public/clothes-images/home-page/home-background.jpg');
+    // background-repeat: no-repeat;
+}
+
+.layoutHeader {
+    background: #FFF;
+}
+
+.upperHeader {
+    padding-top: 24px;
+    height: 40px;
+    display: flex;
+    // justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-pages {
+    display: flex;
+    gap: 25px;
+
+    & a {
+        color: #FFF;
+        font-family: 'Raleway';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-decoration: none;
+
+        &.layout-exile {
+            color: #252525;
+        }
+
+        &.active {
+            color: #E0BEA2;
+        } 
+    }
+}
+
+.additional-links {
+    display: flex;
+    gap: 30px;
+
+    & button {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+}
+
+.settings-buttons {
+    display: flex;
+    gap: 20px;
+
+    & button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & span {
+            margin-right: 5px;
+            font-family: 'Raleway';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+
+            &.setting-button_text {
+                color: #FFF;
+
+                &-layout {
+                    color: #252525;
+                }
+            }
+        }
+    }
+}
+
+.lowerHeader {
+    width: 374px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px;
+    position: relative;
+    left: -60px;
+
+    & h2 {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Raleway';
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    & .line {
+        width: 120px;
+        height: 1px;
+        flex-shrink: 0;
+        background: #FFF;
+        margin-bottom: 20px;
+    }
+
+    & button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & span.wetchNews-button_text {
+            color: #FFF;
+            text-align: center;
+            font-family: 'Raleway';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            text-transform: uppercase;
+            margin-right: 1px;
+        }
+    }
+}

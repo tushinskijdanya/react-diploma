@@ -2,4 +2,155 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Otomanopee";
+  src: url("/fonts/OtomanopeeOne-Regular.ttf");
+}
+header,
+main,
+footer {
+  margin: 0 auto;
+}
+
+main,
+footer {
+  background: #FFF;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.logo-name {
+  font-family: "Otomanopee";
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+.logo-name_layout {
+  color: #E0BEA2;
+}
+
+.homeHeader {
+  height: 682px;
+  background-image: url("/public/clothes-images/home-page/home-background.jpg");
+}
+
+.layoutHeader {
+  background: #FFF;
+}
+
+.upperHeader {
+  padding-top: 24px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-pages {
+  display: flex;
+  gap: 25px;
+}
+.nav-pages a {
+  color: #FFF;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: none;
+}
+.nav-pages a.layout-exile {
+  color: #252525;
+}
+.nav-pages a.active {
+  color: #E0BEA2;
+}
+
+.additional-links {
+  display: flex;
+  gap: 30px;
+}
+.additional-links button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.settings-buttons {
+  display: flex;
+  gap: 20px;
+}
+.settings-buttons button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.settings-buttons button span {
+  margin-right: 5px;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.settings-buttons button span.setting-button_text {
+  color: #FFF;
+}
+.settings-buttons button span.setting-button_text-layout {
+  color: #252525;
+}
+
+.lowerHeader {
+  width: 374px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 250px;
+  position: relative;
+  left: -60px;
+}
+.lowerHeader h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.lowerHeader .line {
+  width: 120px;
+  height: 1px;
+  flex-shrink: 0;
+  background: #FFF;
+  margin-bottom: 20px;
+}
+.lowerHeader button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lowerHeader button span.wetchNews-button_text {
+  color: #FFF;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-right: 1px;
 }/*# sourceMappingURL=index.css.map */
