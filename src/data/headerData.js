@@ -1,6 +1,5 @@
 export const headerData = {
     logo: 'DANTY',
-    isRussian: false,
     russian: {
         links: {
             home: 'HOME',

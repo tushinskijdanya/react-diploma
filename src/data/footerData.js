@@ -50,6 +50,5 @@ export const footerData = {
             telephone: '+38(073) 096 36 44',
             mail: 'info@yanki.com'
         }
-    },
-    isRussian: true
+    }
 }
