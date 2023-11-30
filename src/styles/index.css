@@ -84,27 +84,62 @@ footer {
   display: flex;
   gap: 20px;
 }
-.settings-buttons button {
+.settings-buttons select {
+  height: 21px;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+  font-style: normal;
   border: none;
   background: none;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
-.settings-buttons button span {
-  margin-right: 5px;
-  font-family: "Raleway";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-.settings-buttons button span.setting-button_text {
+.settings-buttons select.setting-button_text {
   color: #FFF;
 }
-.settings-buttons button span.setting-button_text-layout {
+.settings-buttons select.setting-button_text-layout {
   color: #252525;
+}
+.settings-buttons select:focus {
+  outline: none;
+}
+.settings-buttons select:focus option {
+  color: initial;
+  font-size: 16px;
+  font-weight: 700;
+  background: #ccb6a4;
+}
+.settings-buttons select.language-setting {
+  width: 49px;
+  background-image: url("../images/langArrow.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 29px;
+}
+.settings-buttons select.language-setting-layout {
+  width: 49px;
+  background-image: url("../images/langArrow-layout.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 29px;
+}
+.settings-buttons select.currency-setting {
+  width: 62px;
+  background-image: url("../images/langArrow.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 39px;
+}
+.settings-buttons select.currency-setting-layout {
+  width: 62px;
+  background-image: url("../images/langArrow-layout.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 39px;
 }
 
 .lowerHeader {
