@@ -8,7 +8,7 @@ function SearchLine () {
     const [line, setLine] = useState('');
 
     return(
-        <div className="search">
+        <div className="search" >
             <input onChange={(e) => setLine(prev => prev = e.target.value)} type='text' placeholder={placeholderText} name='search' value={line}/>
         </div>
     )
