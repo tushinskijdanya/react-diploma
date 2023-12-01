@@ -1,13 +1,12 @@
 import { composeWithDevTools } from "redux-devtools-extension";
-import { combineReducers, createStore } from "redux";
+import { createStore } from "redux";
+import combineReducers from "combine-reducers";
 
 import { goodsReducer } from "./goodsReducer";
 import { langCurrReducer } from "./langCurrReducer";
 
 
 const rootReducer = combineReducers({
-    // goods: goodsReducer,
-    // langCurr: langCurrReducer
     gds: goodsReducer,
     lng: langCurrReducer
 })

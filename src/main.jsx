@@ -4,8 +4,7 @@ import App from './App.jsx'
 import './styles/index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import { shopStore } from './store/reducer.js'
-
+import { shopStore } from './store/reducer.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
@@ -13,4 +12,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <App />
         </Provider>
     </BrowserRouter>
-);
+); 
