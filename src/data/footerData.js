@@ -2,8 +2,7 @@ export const footerData = {
     russian: {
         company: {
             name: 'КОМПАНИЯ',
-            about: 'О нас',
-            contacts: 'Контакты'
+            about: 'О нас'
         },
         helpful: {
             name: 'ПОЛЕЗНОЕ',
@@ -19,8 +18,8 @@ export const footerData = {
         },
         contacts: {
             name: 'КОНТАКТЫ',
-            insta: '//www.instagram.com/',
-            telegram: '//web.telegram.org/k/',
+            insta: '/public/images/insta.svg',
+            telegram: '/public/images/telega.svg',
             telephone: '+38(073) 096 36 44',
             mail: 'info@yanki.com'
         }
@@ -45,10 +44,10 @@ export const footerData = {
         },
         contacts: {
             name: 'CONTACTS',
-            insta: '//www.instagram.com/',
-            telegram: '//web.telegram.org/k/',
+            insta: '/public/images/insta.svg',
+            telegram: '/public/images/telega.svg',
             telephone: '+38(073) 096 36 44',
-            mail: 'info@yanki.com'
+            mail: 'info@danty.com'
         }
     }
 }
