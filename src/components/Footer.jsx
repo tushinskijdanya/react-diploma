@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Footer () {
     const {language} = useSelector(state => state.lng);
-    const textLang = (language === 'RU') ? footerData.russian : footerData.england;
+    const textLang = (language === 'ru') ? footerData.russian : footerData.england;
     
     return(
         <div className="footer container">

@@ -1,10 +1,23 @@
 import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
+import { useDispatch } from "react-redux";
+
 import { headerData } from "../data/headerData";
 
 function Header () {
     const {language} = useSelector(state => state.lng);
-    const textLang = (language === 'RU') ? headerData.russian : headerData.england;
+    const textLang = (language === 'ru') ? headerData.russian : headerData.england;
+
+    const dispatch = useDispatch();
+
+    const editLanguage = (e) => {
+        console.log('language:', e.target.value)
+        dispatch(changeLangAC(e.target.value))
+    }
+
+    const editCurrency = (e) => {
+        dispatch(changeCurrAC(e.target.value))
+    }
 
     return(
         <div className="layoutHeader">
@@ -19,13 +32,13 @@ function Header () {
                     <h1 className="logo-name logo-name_layout">DANTY</h1>
                 </div>
                 <div className="settings-buttons">
-                    <select className="language-setting-layout setting-button_text-layout">
-                        <option className="language" value="en" selected>EN</option>
+                    <select onChange={(e) => editLanguage(e)} defaultValue="ru" className="language-setting-layout setting-button_text-layout">
                         <option className="language" value="ru">RU</option>
+                        <option className="language" value="en">EN</option>
                     </select>
-                    <select className="currency-setting-layout setting-button_text-layout">
-                        <option className="currency" value="en" selected>BYN</option>
-                        <option className="currency" value="ru">USD</option>
+                    <select onChange={(e) => editCurrency(e)} defaultValue="byn" className="currency-setting-layout setting-button_text-layout">
+                        <option className="currency" value="byn" selected>BYN</option>
+                        <option className="currency" value="usd">USD</option>
                     </select>
                 </div>
                 <div className="additional-links">

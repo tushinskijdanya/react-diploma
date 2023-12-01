@@ -190,6 +190,11 @@ footer {
   margin-right: 1px;
 }
 
+.search {
+  width: 70px;
+  height: 25px;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;

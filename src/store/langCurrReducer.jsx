@@ -1,5 +1,5 @@
 const langCurrState = {
-    language: 'RU',
+    language: 'ru',
     currency: 'BY'
 }
 
@@ -9,6 +9,7 @@ const CHANGE_CURRENCY = 'CHANGE_CURRENCY';
 export const langCurrReducer = (state = langCurrState, action) => {
     switch(action.type) {
         case CHANGE_LANGUAGE: 
+            console.log('action.payload:', action.payload)
             return {...state, language: action.payload}
         case CHANGE_CURRENCY:
             return {...state, currency: action.payload}
