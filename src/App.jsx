@@ -17,13 +17,10 @@ function App() {
         <Route path="/home" element={<Layout />}>
             <Route path="/home/new" element={<NewPage />} />
             <Route path="/home/catalog" element={<Catalog />} />
+            <Route path="/home/catalog/:category" element={<Catalog />} />
+            <Route path="/home/catalog/:category/:id" element={<Catalog />} />
             <Route path="/home/about" element={<AboutPage />} />
         </Route>
-        {/* <Route path="/home/:" element={<Layout />}>
-          <Route path="/new" element={<NewPage />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/about" element={<AboutPage />}></Route>
-        </Route> */}
     </Routes>
   );
 }

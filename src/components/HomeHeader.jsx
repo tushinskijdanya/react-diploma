@@ -1,15 +1,25 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { useDispatch } from "react-redux";
+import { useRef } from "react";
+import useOnClickOutside from "use-onclickoutside";
 
 import { headerData } from "../data/headerData";
-import { changeLangAC, changeCurrAC } from "../store/langCurrReducer";
+import { changeLangAC, changeCurrAC, openSearchAC } from "../store/langCurrReducer";
+import SearchLine from "./Search";
+import HomeHeadersRightLinks from "./HomeHeadersRightLinks";
 
 function HomeHeader () {
-    const {language} = useSelector(state => state.lng);
-    const textLang = (language === 'ru') ? headerData.russian : headerData.england;
 
+    const {language, search} = useSelector(state => state.lng);
+    const textLang = (language === 'ru') ? headerData.russian : headerData.england;
     const dispatch = useDispatch();
+    const searchRef = useRef(null);
+
+    useOnClickOutside(searchRef, () => {
+        console.log('что происходит')
+        dispatch(openSearchAC(false))
+    })
 
     const editLanguage = (e) => {
         console.log('language:', e.target.value)
@@ -42,11 +52,10 @@ function HomeHeader () {
                         <option className="currency" value="usd">USD</option>
                     </select>
                 </div>
-                <div className="additional-links">
-                    <button className="search-button"><img src="../images/search.svg" alt="search" /></button>
-                    <Link className="account_login"><img src="../images/account.svg" alt="account" /></Link>
-                    <Link className="like-page"><img src="../images/like.svg" alt="like" /></Link>
-                    <Link className="cart-page"><img src="../images/cart.svg" alt="cart" /></Link>
+                <div className="right-menu" ref={searchRef}>
+                    {
+                        search ? <SearchLine /> : <HomeHeadersRightLinks />
+                    }
                 </div>
             </div>
             <div className="lowerHeader">

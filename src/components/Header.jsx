@@ -1,14 +1,23 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { useDispatch } from "react-redux";
+import { useRef } from "react";
+import useOnClickOutside from "use-onclickoutside";
 
 import { headerData } from "../data/headerData";
+import { changeLangAC, changeCurrAC, openSearchAC } from "../store/langCurrReducer";
+import HeadersRightLinks from "./HeadersRightLinks";
+import SearchLine from "./Search";
 
 function Header () {
-    const {language} = useSelector(state => state.lng);
+    const {language, search} = useSelector(state => state.lng);
     const textLang = (language === 'ru') ? headerData.russian : headerData.england;
-
     const dispatch = useDispatch();
+    const searchRef = useRef(null);
+
+    useOnClickOutside(searchRef, () => {
+        dispatch(openSearchAC(false))
+    })
 
     const editLanguage = (e) => {
         console.log('language:', e.target.value)
@@ -37,15 +46,14 @@ function Header () {
                         <option className="language" value="en">EN</option>
                     </select>
                     <select onChange={(e) => editCurrency(e)} defaultValue="byn" className="currency-setting-layout setting-button_text-layout">
-                        <option className="currency" value="byn" selected>BYN</option>
+                        <option className="currency" value="byn">BYN</option>
                         <option className="currency" value="usd">USD</option>
                     </select>
                 </div>
-                <div className="additional-links">
-                    <button className="search-button"><img src="../images/search-layout.svg" alt="search" /></button>
-                    <Link className="account_login"><img src="../images/account-layout.svg" alt="account" /></Link>
-                    <Link className="like-page"><img src="../images/like-layout.svg" alt="like" /></Link>
-                    <Link className="cart-page"><img src="../images/cart-layout.svg" alt="cart" /></Link>
+                <div className="right-menu" ref={searchRef}>
+                    {
+                        search ? <SearchLine /> : <HeadersRightLinks />
+                    }
                 </div>
             </div>
         </div>
