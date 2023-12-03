@@ -1,13 +1,12 @@
 import CategorySlider from "../../components/CategorySlider";
-import SearchLine from "../../components/Search";
+import SubscriptNew from "../../components/SubscriptNew";
 
 function Home () {
     return (
         <>
             <CategorySlider />
+            <SubscriptNew />
         </>
-        
-        
     )
 
 }

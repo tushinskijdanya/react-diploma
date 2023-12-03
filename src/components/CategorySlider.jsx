@@ -45,7 +45,7 @@ function CategorySlider () {
 
     return(
         <div className="homeCategory">
-            <p className="homeCategory-name">{(language === 'ru' ? 'Категории' : 'Categories')}</p>
+            <h4>{(language === 'ru' ? 'Категории' : 'Categories')}</h4>
             <div className="homeCategory_slider">
                 <div className="homeCategory_slider-block">
                     <div className="thisCategory" onClick={() => goCategory(goods[idx.idx1].categoryEN)}>

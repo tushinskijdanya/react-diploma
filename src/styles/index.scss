@@ -237,7 +237,6 @@ footer {
       padding-left: 20px;
       padding-right: 50px;
       border-radius: 20px;
-    //   border: 0.5px solid #252525;
       border: 0.5px solid #E0BEA2;
       background: #FFF;
       color: #252525;
@@ -279,18 +278,18 @@ footer {
 
 // HOMEPAGE
 
+h4 {
+    color: #252525;
+    font-family: Raleway;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
 .homeCategory {
     padding-top: 100px;
-
-    & p.homeCategory-name {
-        color: #252525;
-        font-family: Raleway;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-        margin-bottom: 50px;
-    }
 
     &_slider {
         position: relative;
@@ -366,6 +365,87 @@ footer {
     }
   }
 
+  .homeSub {
+    margin: 0 auto;
+    width: 600px;
+    padding-top: 100px;
+    text-align: center;
+    gap: 20px;
+
+    &-form {
+        margin-bottom: 20px;
+
+        & input {
+            width: 600px;
+            height: 50px;
+            text-align: center;
+            border: 0.5px solid #252525;
+            color: #252525;
+            font-family: 'Raleway';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 20px;
+            padding: 0 20px 0 20px;
+
+            &::placeholder {
+                color: rgba(37, 37, 37, 0.50);
+                text-align: center;
+                font-family: Raleway;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+            }
+
+            &:focus {
+                outline: none;
+
+                &::placeholder {
+                    color: transparent;
+                }
+            }
+        }
+
+        &_button {
+
+            & button {
+                width: 600px;
+                height: 50px;
+                background: #E0BEA2;
+                border: none;
+                color: #FFF;
+                text-align: center;
+                font-family: Raleway;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                text-transform: uppercase;
+
+                &:hover {
+                    cursor: pointer;
+                    background: #ddc1aa;
+                }
+
+                &:active {
+                    box-shadow: 0px 5px 17px 2px rgba(34, 60, 80, 0.2) inset;
+                }
+            }
+        }
+    }
+
+    &_ps p {
+        color: #252525;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+    }
+  }
 
 // FOOTER
 
