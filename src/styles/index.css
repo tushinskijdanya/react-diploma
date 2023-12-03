@@ -24,6 +24,10 @@ footer {
   margin: 0 auto;
 }
 
+.none {
+  display: none;
+}
+
 .logo-name {
   font-family: "Otomanopee";
   font-size: 40px;
@@ -206,7 +210,7 @@ footer {
   padding-left: 20px;
   padding-right: 50px;
   border-radius: 20px;
-  border: 0.5px solid #252525;
+  border: 0.5px solid #E0BEA2;
   background: #FFF;
   color: #252525;
   font-family: "Raleway";
@@ -247,6 +251,80 @@ footer {
   top: 13px;
   right: 20px;
   cursor: pointer;
+}
+
+.homeCategory {
+  padding-top: 100px;
+}
+.homeCategory p.homeCategory-name {
+  color: #252525;
+  font-family: Raleway;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+.homeCategory_slider {
+  position: relative;
+}
+.homeCategory_slider-block {
+  display: flex;
+  justify-content: space-between;
+}
+.homeCategory-button {
+  width: 40px;
+  height: 40px;
+  background-color: #E0BEA2;
+  border: none;
+}
+.homeCategory-button:hover {
+  cursor: pointer;
+  background-color: #af8c6f;
+}
+.homeCategory-button:focus {
+  background-color: #412107;
+}
+.homeCategory-button_left {
+  position: absolute;
+  top: 172px;
+  left: 20px;
+}
+.homeCategory-button_right {
+  position: absolute;
+  top: 172px;
+  right: 20px;
+}
+
+.thisCategory {
+  position: relative;
+}
+.thisCategory:hover {
+  cursor: pointer;
+  box-shadow: -5px 10px 27px -9px rgba(34, 60, 80, 0.2);
+}
+.thisCategory-name {
+  position: absolute;
+  bottom: 0px;
+  padding-top: 8px;
+  background: rgba(224, 190, 162, 0.75);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  width: 273px;
+  height: 40px;
+  text-align: center;
+}
+.thisCategory-name p {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.thisCategory img {
+  width: 273px;
 }
 
 .footer {

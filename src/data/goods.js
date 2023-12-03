@@ -660,7 +660,7 @@ export const goods = [
         viewed: false,
     },
     {
-        cacategoryEN: 'jumpers',
+        categoryEN: 'jumpers',
         categoryRU: 'джемперы',
         images: {
             image1: '/public/clothes-images/jumpers/1/1.jpg',
