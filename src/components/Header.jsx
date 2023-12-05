@@ -10,7 +10,7 @@ import HeadersRightLinks from "./HeadersRightLinks";
 import SearchLine from "./Search";
 
 function Header () {
-    const {language, search} = useSelector(state => state.lng);
+    const {currency ,language, search} = useSelector(state => state.lng);
     const textLang = (language === 'ru') ? headerData.russian : headerData.england;
     const dispatch = useDispatch();
     const searchRef = useRef(null);
@@ -41,11 +41,11 @@ function Header () {
                     <h1 className="logo-name logo-name_layout">DANTY</h1>
                 </div>
                 <div className="settings-buttons">
-                    <select onChange={(e) => editLanguage(e)} defaultValue="ru" className="language-setting-layout setting-button_text-layout">
+                    <select onChange={(e) => editLanguage(e)} defaultValue={language} className="language-setting-layout setting-button_text-layout">
                         <option className="language" value="ru">RU</option>
                         <option className="language" value="en">EN</option>
                     </select>
-                    <select onChange={(e) => editCurrency(e)} defaultValue="byn" className="currency-setting-layout setting-button_text-layout">
+                    <select onChange={(e) => editCurrency(e)} defaultValue={currency} className="currency-setting-layout setting-button_text-layout">
                         <option className="currency" value="byn">BYN</option>
                         <option className="currency" value="usd">USD</option>
                     </select>

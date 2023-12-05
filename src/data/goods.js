@@ -2,6 +2,7 @@ export const goods = [
     {
         categoryEN: 'coast',
         categoryRU: 'пальто',
+        id: 1,
         images: {
             image1: '/public/clothes-images/coast/1/1.jpeg',
             image2: '/public/clothes-images/coast/1/2.jpeg',
@@ -46,6 +47,7 @@ export const goods = [
     {
         categoryEN: 'coast',
         categoryRU: 'пальто',
+        id: 2,
         images: {
             image1: '/public/clothes-images/coast/2/1.jpg',
             image2: '/public/clothes-images/coast/2/2.jpg',
@@ -90,6 +92,7 @@ export const goods = [
     {
         categoryEN: 'coast',
         categoryRU: 'пальто',
+        id: 3,
         images: {
             image3: '/public/clothes-images/coast/3/3.jpg',
             image1: '/public/clothes-images/coast/3/1.jpg',
@@ -134,6 +137,7 @@ export const goods = [
     {
         categoryEN: 'coast',
         categoryRU: 'пальто',
+        id: 4,
         images: {
             image1: '/public/clothes-images/coast/4/1.jpeg',
             image2: '/public/clothes-images/coast/4/2.jpeg',
@@ -178,6 +182,7 @@ export const goods = [
     {
         categoryEN: 'coast',
         categoryRU: 'пальто',
+        id: 5,
         images: {
             image1: '/public/clothes-images/coast/5/1.jpeg',
             image2: '/public/clothes-images/coast/5/2.jpeg',
@@ -222,6 +227,7 @@ export const goods = [
     {
         categoryEN: 'costumes',
         categoryRU: 'костюмы',
+        id: 6,
         images: {
             image1: '/public/clothes-images/costumes/1/1.jpeg',
             image2: '/public/clothes-images/costumes/1/2.jpeg',
@@ -266,6 +272,7 @@ export const goods = [
     {
         categoryEN: 'costumes',
         categoryRU: 'костюмы',
+        id: 7,
         images: {
             image1: '/public/clothes-images/costumes/2/1.jpeg',
             image2: '/public/clothes-images/costumes/2/2.jpeg',
@@ -310,6 +317,7 @@ export const goods = [
     {
         categoryEN: 'costumes',
         categoryRU: 'костюмы',
+        id: 8,
         images: {
             image1: '/public/clothes-images/costumes/3/1.jpeg',
             image2: '/public/clothes-images/costumes/3/2.jpeg',
@@ -354,6 +362,7 @@ export const goods = [
     {
         categoryEN: 'costumes',
         categoryRU: 'костюмы',
+        id: 9,
         images: {
             image1: '/public/clothes-images/costumes/4/1.jpeg',
             image2: '/public/clothes-images/costumes/4/2.jpeg',
@@ -398,6 +407,7 @@ export const goods = [
     {
         categoryEN: 'costumes',
         categoryRU: 'костюмы',
+        id: 10,
         images: {
             image1: '/public/clothes-images/costumes/5/1.jpeg',
             image2: '/public/clothes-images/costumes/5/2.jpeg',
@@ -442,6 +452,7 @@ export const goods = [
     {
         categoryEN: 'jeans',
         categoryRU: 'джинсы',
+        id: 11,
         images: {
             image1: '/public/clothes-images/jeans/1/1.jpeg',
             image2: '/public/clothes-images/jeans/1/2.jpeg',
@@ -486,6 +497,7 @@ export const goods = [
     {
         categoryEN: 'jeans',
         categoryRU: 'джинсы',
+        id: 12,
         images: {
             image1: '/public/clothes-images/jeans/2/1.jpg',
             image2: '/public/clothes-images/jeans/2/2.jpg',
@@ -530,6 +542,7 @@ export const goods = [
     {
         categoryEN: 'jeans',
         categoryRU: 'джинсы',
+        id: 13,
         images: {
             image1: '/public/clothes-images/jeans/3/1.jpeg',
             image2: '/public/clothes-images/jeans/3/1.jpeg',
@@ -574,6 +587,7 @@ export const goods = [
     {
         categoryEN: 'jeans',
         categoryRU: 'джинсы',
+        id: 14,
         images: {
             image1: '/public/clothes-images/jeans/4/1.jpeg',
             image2: '/public/clothes-images/jeans/4/2.jpeg',
@@ -618,6 +632,7 @@ export const goods = [
     {
         categoryEN: 'jeans',
         categoryRU: 'джинсы',
+        id: 15,
         images: {
             image1: '/public/clothes-images/jeans/5/1.jpg',
             image2: '/public/clothes-images/jeans/5/2.jpg',
@@ -662,6 +677,7 @@ export const goods = [
     {
         categoryEN: 'jumpers',
         categoryRU: 'джемперы',
+        id: 16,
         images: {
             image1: '/public/clothes-images/jumpers/1/1.jpg',
             image2: '/public/clothes-images/jumpers/1/2.jpg',
@@ -706,6 +722,7 @@ export const goods = [
     {
         categoryEN: 'jumpers',
         categoryRU: 'джемперы',
+        id: 17,
         images: {
             image1: '/public/clothes-images/jumpers/2/1.jpeg',
             image2: '/public/clothes-images/jumpers/2/2.jpeg',
@@ -750,6 +767,7 @@ export const goods = [
     {
         categoryEN: 'jumpers',
         categoryRU: 'джемперы',
+        id: 18,
         images: {
             image1: '/public/clothes-images/jumpers/3/1.jpeg',
             image2: '/public/clothes-images/jumpers/3/2.jpeg',
@@ -794,6 +812,7 @@ export const goods = [
     {
         categoryEN: 'jumpers',
         categoryRU: 'джемперы',
+        id: 19,
         images: {
             image1: '/public/clothes-images/jumpers/4/1.jpeg',
             image2: '/public/clothes-images/jumpers/4/2.jpeg',
@@ -838,6 +857,7 @@ export const goods = [
     {
         categoryEN: 'jumpers',
         categoryRU: 'джемперы',
+        id: 20,
         images: {
             image1: '/public/clothes-images/jumpers/5/1.jpeg',
             image2: '/public/clothes-images/jumpers/5/2.jpeg',
@@ -882,6 +902,7 @@ export const goods = [
     {
         categoryEN: 'polo',
         categoryRU: 'футболки-поло',
+        id: 21,
         images: {
             image1: '/public/clothes-images/polo/1/1.jpeg',
             image2: '/public/clothes-images/polo/1/2.jpeg',
@@ -926,6 +947,7 @@ export const goods = [
     {
         categoryEN: 'polo',
         categoryRU: 'футболки-поло',
+        id: 22,
         images: {
             image1: '/public/clothes-images/polo/2/1.jpeg',
             image2: '/public/clothes-images/polo/2/2.jpeg',
@@ -970,6 +992,7 @@ export const goods = [
     {
         categoryEN: 'polo',
         categoryRU: 'футболки-поло',
+        id: 23,
         images: {
             image1: '/public/clothes-images/polo/3/1.jpeg',
             image2: '/public/clothes-images/polo/3/2.jpeg',
@@ -1014,6 +1037,7 @@ export const goods = [
     {
         categoryEN: 'polo',
         categoryRU: 'футболки-поло',
+        id: 24,
         images: {
             image1: '/public/clothes-images/polo/4/1.jpeg',
             image2: '/public/clothes-images/polo/4/2.jpeg',
@@ -1058,6 +1082,7 @@ export const goods = [
     {
         categoryEN: 'polo',
         categoryRU: 'футболки-поло',
+        id: 25,
         images: {
             image1: '/public/clothes-images/polo/5/1.jpeg',
             image2: '/public/clothes-images/polo/5/2.jpeg',
@@ -1102,6 +1127,7 @@ export const goods = [
     {
         categoryEN: 'shirts',
         categoryRU: 'рубашки',
+        id: 26,
         images: {
             image1: '/public/clothes-images/shirts/1/1.jpg',
             image2: '/public/clothes-images/shirts/1/2.jpg',
@@ -1146,6 +1172,7 @@ export const goods = [
     {
         categoryEN: 'shirts',
         categoryRU: 'рубашки',
+        id: 27,
         images: {
             image1: '/public/clothes-images/shirts/2/1.jpeg',
             image2: '/public/clothes-images/shirts/2/2.jpeg',
@@ -1190,6 +1217,7 @@ export const goods = [
     {
         categoryEN: 'shirts',
         categoryRU: 'рубашки',
+        id: 28,
         images: {
             image1: '/public/clothes-images/shirts/3/1.jpeg',
             image2: '/public/clothes-images/shirts/3/2.jpeg',
@@ -1234,6 +1262,7 @@ export const goods = [
     {
         categoryEN: 'shirts',
         categoryRU: 'рубашки',
+        id: 29,
         images: {
             image1: '/public/clothes-images/shirts/4/1.jpeg',
             image2: '/public/clothes-images/shirts/4/2.jpeg',
@@ -1278,6 +1307,7 @@ export const goods = [
     {
         categoryEN: 'shirts',
         categoryRU: 'рубашки',
+        id: 30,
         images: {
             image1: '/public/clothes-images/shirts/5/1.jpeg',
             image2: '/public/clothes-images/shirts/5/2.jpeg',
@@ -1322,6 +1352,7 @@ export const goods = [
     {
         categoryEN: 'sweaters',
         categoryRU: 'свитеры',
+        id: 31,
         images: {
             image1: '/public/clothes-images/sweater/1/1.jpeg',
             image2: '/public/clothes-images/sweater/1/1.jpeg',
@@ -1366,6 +1397,7 @@ export const goods = [
     {
         categoryEN: 'sweaters',
         categoryRU: 'свитеры',
+        id: 32,
         images: {
             image1: '/public/clothes-images/sweater/2/1.jpeg',
             image2: '/public/clothes-images/sweater/2/2.jpeg',
@@ -1410,6 +1442,7 @@ export const goods = [
     {
         categoryEN: 'sweaters',
         categoryRU: 'свитеры',
+        id: 33,
         images: {
             image1: '/public/clothes-images/sweater/3/1.jpg',
             image2: '/public/clothes-images/sweater/3/2.jpg',
@@ -1454,6 +1487,7 @@ export const goods = [
     {
         categoryEN: 'sweaters',
         categoryRU: 'свитеры',
+        id: 34,
         images: {
             image1: '/public/clothes-images/sweater/4/1.jpeg',
             image2: '/public/clothes-images/sweater/4/2.jpeg',
@@ -1498,6 +1532,7 @@ export const goods = [
     {
         categoryEN: 'sweaters',
         categoryRU: 'свитеры',
+        id: 35,
         images: {
             image1: '/public/clothes-images/sweater/5/1.jpeg',
             image2: '/public/clothes-images/sweater/5/2.jpeg',
@@ -1542,6 +1577,7 @@ export const goods = [
     {
         categoryEN: 't-shirts',
         categoryRU: 'футболки',
+        id: 36,
         images: {
             image1: '/public/clothes-images/t-shirts/1/1.jpeg',
             image2: '/public/clothes-images/t-shirts/1/2.jpeg',
@@ -1586,6 +1622,7 @@ export const goods = [
     {
         categoryEN: 't-shirts',
         categoryRU: 'футболки',
+        id: 37,
         images: {
             image1: '/public/clothes-images/t-shirts/2/1.jpeg',
             image2: '/public/clothes-images/t-shirts/2/2.jpeg',
@@ -1630,6 +1667,7 @@ export const goods = [
     {
         categoryEN: 't-shirts',
         categoryRU: 'футболки',
+        id: 38,
         images: {
             image1: '/public/clothes-images/t-shirts/3/1.jpeg',
             image2: '/public/clothes-images/t-shirts/3/2.jpeg',
@@ -1674,6 +1712,7 @@ export const goods = [
     {
         categoryEN: 't-shirts',
         categoryRU: 'футболки',
+        id: 39,
         images: {
             image1: '/public/clothes-images/t-shirts/4/1.jpeg',
             image2: '/public/clothes-images/t-shirts/4/2.jpeg',
@@ -1718,6 +1757,7 @@ export const goods = [
     {
         categoryEN: 't-shirts',
         categoryRU: 'футболки',
+        id: 40,
         images: {
             image1: '/public/clothes-images/t-shirts/5/1.jpeg',
             image2: '/public/clothes-images/t-shirts/5/2.jpeg',

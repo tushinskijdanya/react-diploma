@@ -5,6 +5,7 @@ import Catalog from "./pages/catalog/Catalog";
 import HomeLayout from "./layouts/homeLayout";
 import NewPage from "./pages/new/New";
 import AboutPage from "./pages/about/About";
+import ProductCard from "./components/ProductCard";
 
 
 function App() {
@@ -17,8 +18,7 @@ function App() {
         <Route path="/home" element={<Layout />}>
             <Route path="/home/new" element={<NewPage />} />
             <Route path="/home/catalog" element={<Catalog />} />
-            <Route path="/home/catalog/:category" element={<Catalog />} />
-            <Route path="/home/catalog/:category/:id" element={<Catalog />} />
+            <Route path="/home/catalog/:category/:id" element={<ProductCard />} />
             <Route path="/home/about" element={<AboutPage />} />
         </Route>
     </Routes>

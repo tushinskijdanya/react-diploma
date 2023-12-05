@@ -1,22 +1,29 @@
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 function CatProductCard (props) {
     const {product} = props;
     const {currency, language} = useSelector(state => state.lng);
     const textLang = (language === 'ru') ? product.russian : product.english;
+    const navigate = useNavigate();
 
+    const toProductCart = () => {
+        navigate(`/home/catalog/${product.categoryEN}/${product.id}`, {state: {product: {product}}})
+    }
      return(
         <div className="categoriesCard_block">
-            <div className="categoriesCard_block-image">
-                <img className="block-image" src={product.images.image1} alt="clothes" />
-                <div className="categoriesCard_block-image-like">
-                    <button className={(product.favourite) ? 'none' : 'like'}><img src="/public/images/likeDefault.svg" alt="like" /></button>
-                    <button className={(product.favourite) ? 'like' : 'none'}><img src="/public/images/likeActive.svg" alt="like" /></button>
+            <div onClick={toProductCart} className="categoriesCard_block__linkToProduct">
+                <div className="categoriesCard_block-image">
+                    <img className="block-image" src={product.images.image1} alt="clothes" />
+                    <div className="categoriesCard_block-image-like">
+                        <button className={(product.favourite) ? 'none' : 'like'}><img src="/public/images/likeDefault.svg" alt="like" /></button>
+                        <button className={(product.favourite) ? 'like' : 'none'}><img src="/public/images/likeActive.svg" alt="like" /></button>
+                    </div>
                 </div>
-            </div>
-            <div className="categoriesCard_block-name">
-                <p className="name">{textLang.name}</p>
-                <p className={(product.new) ? 'new' : 'none'}>new</p>
+                <div className="categoriesCard_block-name">
+                    <p className="name">{textLang.name}</p>
+                    <p className={(product.new) ? 'new' : 'none'}>new</p>
+                </div>
             </div>
             <div className="categoriesCard_block-shop">
                 <p className="price">

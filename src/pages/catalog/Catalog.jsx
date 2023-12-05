@@ -22,6 +22,8 @@ function Catalog () {
     console.log('category: ', categoryActive)
     console.log('categoryName', categoryName)
 
+    console.log('textLang: ', textLang)
+
     
 
     console.log('products: ', products)
@@ -33,7 +35,7 @@ function Catalog () {
                     <NavLink className={({isActive}) => isActive ? "catalogsLink catalog_active" : "catalogsLink" } to='/'>{textLang.links.main}</NavLink>
                     <img src="/public/images/path-RightArrow.svg" alt="arrow" />
                     <NavLink onClick={() => setCategoryActive(null)} className={({isActive}) => (isActive && (categoryActive === null)) ? "catalogsLink catalog_active" : "catalogsLink" } to='/home/catalog'>{textLang.links.catalog}</NavLink>
-                    <div className={(categoryActive !== null && locCategory !== null && categoryActive !== 'new') ? "pathsList-block_category" : 'none'}>
+                    <div className={(categoryActive !== null && categoryActive !== 'new') ? "pathsList-block_category" : 'none'}>
                         <img src="/public/images/path-RightArrow.svg" alt="arrow" />
                         <span className="catalogsLink catalog_active">{categoryName}</span>
                     </div>

@@ -477,6 +477,7 @@ h4 {
 
   .catalog_active {
     color: #E0BEA2;
+    cursor: default;
   }
 
   .pathsList-NEW {
@@ -537,6 +538,13 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &__linkToProduct {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: grab;
+    }
 
     &-image {
         position: relative;

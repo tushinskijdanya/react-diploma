@@ -438,6 +438,7 @@ h4 {
 
 .catalog_active {
   color: #E0BEA2;
+  cursor: default;
 }
 
 .pathsList-NEW {
@@ -494,6 +495,12 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.categoriesCard_block__linkToProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: grab;
 }
 .categoriesCard_block-image {
   position: relative;

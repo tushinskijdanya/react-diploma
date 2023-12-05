@@ -11,7 +11,7 @@ import SearchLine from "./Search";
 import HomeHeadersRightLinks from "./HomeHeadersRightLinks";
 
 function HomeHeader () {
-    const {language, search} = useSelector(state => state.lng);
+    const {currency ,language, search} = useSelector(state => state.lng);
     const textLang = (language === 'ru') ? headerData.russian : headerData.england;
     const dispatch = useDispatch();
     const searchRef = useRef(null);
@@ -48,11 +48,11 @@ function HomeHeader () {
                     <h1 className="logo-name">DANTY</h1>
                 </div>
                 <div className="settings-buttons">
-                    <select onChange={(e) => editLanguage(e)} defaultValue="ru" className="language-setting setting-button_text">
+                    <select onChange={(e) => editLanguage(e)} defaultValue={language} className="language-setting setting-button_text">
                         <option className="language" value="ru">RU</option>
                         <option className="language" value="en">EN</option>
                     </select>
-                    <select onChange={(e) => editCurrency(e)} defaultValue="byn" className="currency-setting setting-button_text">
+                    <select onChange={(e) => editCurrency(e)} defaultValue={currency} className="currency-setting setting-button_text">
                         <option className="currency" value="byn">BYN</option>
                         <option className="currency" value="usd">USD</option>
                     </select>
