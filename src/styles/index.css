@@ -411,6 +411,7 @@ h4 {
 }
 
 .pathsList-block {
+  height: 50px;
   padding-top: 40px;
   display: flex;
   align-items: center;
