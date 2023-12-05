@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { useDispatch } from "react-redux";
 import { useRef } from "react";
@@ -10,11 +11,11 @@ import SearchLine from "./Search";
 import HomeHeadersRightLinks from "./HomeHeadersRightLinks";
 
 function HomeHeader () {
-
     const {language, search} = useSelector(state => state.lng);
     const textLang = (language === 'ru') ? headerData.russian : headerData.england;
     const dispatch = useDispatch();
     const searchRef = useRef(null);
+    const navigate = useNavigate();
 
     useOnClickOutside(searchRef, () => {
         console.log('что происходит')
@@ -28,6 +29,10 @@ function HomeHeader () {
 
     const editCurrency = (e) => {
         dispatch(changeCurrAC(e.target.value))
+    }
+
+    const goCategory = () => {
+        navigate(`/home/catalog`, {state: {category: 'new'}})
     }
 
     return(
@@ -61,7 +66,7 @@ function HomeHeader () {
             <div className="lowerHeader">
                 <h2 className="newCollection-text">{textLang.homeLayout.new}</h2>
                 <div className="line" />
-                <button className="wetchNews-button"><span className="wetchNews-button_text">{textLang.homeLayout.wetch}</span><img src="../images/newArrow.svg" alt="arrow" /></button>
+                <button onClick={() => goCategory()} className="wetchNews-button"><span className="wetchNews-button_text">{textLang.homeLayout.wetch}</span><img src="../images/newArrow.svg" alt="arrow" /></button>
             </div>
         </div>
     )

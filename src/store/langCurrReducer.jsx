@@ -1,6 +1,6 @@
 const langCurrState = {
     language: 'ru',
-    currency: 'BY',
+    currency: 'byn',
     search: false
 }
 

@@ -1719,9 +1719,9 @@ export const goods = [
         categoryEN: 't-shirts',
         categoryRU: 'футболки',
         images: {
-            image1: '/public/clothes-images/t-shirts/1',
-            image2: '/public/clothes-images/t-shirts/1',
-            image3: '/public/clothes-images/t-shirts/1'
+            image1: '/public/clothes-images/t-shirts/5/1.jpeg',
+            image2: '/public/clothes-images/t-shirts/5/2.jpeg',
+            image3: '/public/clothes-images/t-shirts/5/3.jpeg'
         },
         russian: {
             name: 'МАЙКА ОДНОТОННАЯ',

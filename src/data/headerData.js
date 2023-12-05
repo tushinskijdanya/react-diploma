@@ -5,7 +5,8 @@ export const headerData = {
             home: 'HOME',
             new: 'NEW',
             catalog: 'КАТАЛОГ',
-            about: 'О НАС'
+            about: 'О НАС',
+            main: 'ГЛАВНАЯ'
         },
         homeLayout: {
             new: 'Новая коллекция',
@@ -17,7 +18,8 @@ export const headerData = {
             home: 'HOME',
             new: 'NEW',
             catalog: 'CATALOG',
-            about: 'ABOUT'
+            about: 'ABOUT',
+            main: 'MAIN'
         },
         homeLayout: {
             new: 'New collection',
